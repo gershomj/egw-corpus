@@ -29,6 +29,7 @@ After rebuilding the corpus DB:
 ## Technical details
 
 - Source: `~/.hermes/egw-corpus.db` (4.4GB SQLite, FTS5-indexed)
-- Compression: zstd level 10
-- Chunk size: 45MB (stays under GitHub's 100MB file limit)
+- **Compression:** zstd level 10 (4.4GB → 3.1GB)
+- **Chunk count:** 68 chunks
+- **Chunk size:** 45MB each
 - Required by: [egw-tools](https://github.com/gershomj/egw-tools) v3.1.0+
